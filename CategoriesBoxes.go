@@ -57,10 +57,7 @@ func (box Box) isBulky() bool {
 }
 
 func (box Box) isHeavy() bool {
-	if box.mass >= 100 {
-		return true
-	}
-	return false
+	return box.mass >= 100
 }
 
 func categorizeBox(length int, width int, height int, mass int) string {
